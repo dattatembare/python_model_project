@@ -25,33 +25,6 @@
       "interval": 1,
       "backupCount": 0
     },
-    "info_file_handler": {
-      "level": "INFO",
-      "filename": "dt-{time}.log",
-      "class": "logging.handlers.TimedRotatingFileHandler",
-      "formatter": "standard",
-      "when": "d",
-      "interval": 1,
-      "backupCount": 0
-    },
-    "trace_file_handler": {
-      "level": "TRACE",
-      "filename": "dt-{time}.log",
-      "class": "logging.handlers.TimedRotatingFileHandler",
-      "formatter": "standard",
-      "when": "d",
-      "interval": 1,
-      "backupCount": 0
-    },
-    "perf_file_handler": {
-      "level": "PERF",
-      "filename": "dt-{time}.log",
-      "class": "logging.handlers.TimedRotatingFileHandler",
-      "formatter": "standard",
-      "when": "d",
-      "interval": 1,
-      "backupCount": 0
-    },
     "error_file_handler": {
       "level": "ERROR",
       "filename": "dt-error-{time}.log",
@@ -67,9 +40,6 @@
       "handlers": [
         "default",
         "detailed_file_handler",
-        "info_file_handler",
-        "trace_file_handler",
-        "perf_file_handler",
         "error_file_handler"
       ],
       "level": "INFO",
