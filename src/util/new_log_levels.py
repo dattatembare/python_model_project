@@ -1,8 +1,8 @@
 import logging
 from typing import Any
 
-PERF = 21
-TRACE = 22
+PERF = 9
+TRACE = 8
 PERF_TEXT = 'PERF'
 TRACE_TEXT = 'TRACE'
 

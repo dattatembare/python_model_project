@@ -17,8 +17,8 @@ def env_config() -> Dict[str, Any]:
     :return: Config dict
     """
 
-    # Get environment variable MDPF_ENV which is set in System Environment variables.
-    env = os.environ.get('MDPF_ENV')
+    # Get environment variable YOUR_ENV which is set in System Environment variables.
+    env = os.environ.get('YOUR_ENV')
     env = env.upper() if env is not None else ''
 
     config = ConfigParser()
@@ -30,4 +30,4 @@ def env_config() -> Dict[str, Any]:
     if env in config.sections():
         return {option: config.get(env, option) for option in config.options(env)}
     else:
-        raise Exception(f'Invalid env type or MDPF_ENV not set in System Environment Variables: {env}')
+        raise Exception(f'Invalid env type or YOUR_ENV not set in System Environment Variables: {env}')
