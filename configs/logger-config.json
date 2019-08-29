@@ -12,12 +12,12 @@
   },
   "handlers": {
     "default": {
-      "level": "DEBUG",
+      "level": "TRACE",
       "formatter": "standard",
       "class": "logging.StreamHandler"
     },
     "detailed_file_handler": {
-      "level": "DEBUG",
+      "level": "TRACE",
       "filename": "dt-{time}.log",
       "class": "logging.handlers.TimedRotatingFileHandler",
       "formatter": "standard",
